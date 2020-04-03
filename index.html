@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website design using HTML and CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="left-box">
+            <div class="wrapper">
+                <img src="" class="logo" alt="">
+                <div class="search-box">
+                    <img src="search.png" alt="">
+                    <input type="text" placeholder="Text">
+                </div>
+                <div class="vertical-line"> </div>
+                <ul>
+                    <li><a href="#"></a>Production</li>
+                    <li><a href="#"></a>Facility</li>
+                    <li><a href="#"></a>Mechanism</li> 
+                    <li><a href="#"></a>Our Teams</li>
+                </ul>
+            </div>
+         </div>
+            <div class="right-box">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Products</a></li>
+                    </ul>
+                </nav>
+       
+        <h2>THE FUTURE IS<br> COMING</h2>
+        <div class="robot">
+            <img src="robo.png" alt="">
+            <h1>Robotics </h1>
+            <div class="features">
+                <div>
+                    <small> Watch preview </small>
+                    <img src="play.png" alt="">
+                </div>
+                <div>
+                   <small> The Making </small>
+                   <img src="settings.png" alt="">
+                    </div>
+                    <div>
+                     <small> Download pdf </small>
+                    <img src="download.png" alt="">
+                    </div>
+            </div>
+        </div>
+        <div class="circle"></div>
+        <div class="pagination">
+            <ul>
+                <li class="active"><a href="#">01</a></li>
+                <li><a href="#">02</a></li>
+                <li><a href="#">03</a></li>
+                <li><a href="#">04</a></li>
+                <li><a href="#">05</a></li>
+            </ul>
+        </div>
+        <img class="volume" src="volume.png">
+        </div>
+    </div>
+    <div class="smallCursor"></div>
+    <div class="largeCursor"></div>
+    <script>
+        var smallCursor = document.querySelector(".smallCursor");
+        var largeCursor = document.querySelector(".largeCursor");
+
+        document.onmousemove = function(e)
+        {
+            smallCursor.style.left = (e.pageX - 5) + "px";
+            smallCursor.style.top = (e.pageY - 5)  + "px";
+
+            smallCursor.style.display = "block";
+
+            largeCursor.style.left = (e.pageX - 10) + "px";
+            largeCursor.style.top = (e.pageY - 10)  + "px";
+                   }
+
+    </script>
+</body>
+</html>
